@@ -12,8 +12,8 @@ export const InputComponent = ({
   placeholder,
 }: InputComponentProps) => {
   return (
-    <div className="flex items-center justify-between w-full gap-3">
-      <label htmlFor={name} className="">
+    <div className="flex flex-col px-5 py-1 border border-gray-300 rounded-md w-96 focus-within:outline-none focus-within:border-blue-500 focus-within:border-2">
+      <label htmlFor={name} className="text-sm text-gray-500">
         {label}
       </label>
       <input
@@ -21,7 +21,7 @@ export const InputComponent = ({
         name={name}
         type={type}
         placeholder={placeholder}
-        className="p-2 border border-gray-300 rounded-md focus:border-blue-400 focus:outline-none"
+        className="focus:outline-none"
       />
     </div>
   );
