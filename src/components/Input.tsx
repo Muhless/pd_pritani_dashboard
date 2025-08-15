@@ -1,5 +1,6 @@
 type InputComponentProps = {
   label: string;
+  className?: string;
   name: string;
   type?: string;
   placeholder?: string;
@@ -7,13 +8,14 @@ type InputComponentProps = {
 
 export const InputComponent = ({
   label,
+  className,
   name,
   type = "text",
   placeholder,
 }: InputComponentProps) => {
   return (
-    <div className="flex flex-col px-5 py-1 border border-gray-300 rounded-md w-96 focus-within:outline-none focus-within:border-blue-500 focus-within:border-2">
-      <label htmlFor={name} className="text-sm text-gray-500">
+    <div className="flex flex-col gap-1">
+      <label htmlFor={name} className={className}>
         {label}
       </label>
       <input
@@ -21,7 +23,7 @@ export const InputComponent = ({
         name={name}
         type={type}
         placeholder={placeholder}
-        className="focus:outline-none"
+        className="px-4 py-2 text-sm transition-all duration-150 border border-gray-300 rounded-md outline-none w-96 focus:border-blue-500 focus:ring-blue-500 focus:ring-1"
       />
     </div>
   );

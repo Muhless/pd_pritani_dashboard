@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Penggilingan Padi Pritani",
   icons: {
-    icon: "images/logo-pritani.png",
+    icon: "/logo-pritani.png",
   },
 };
 

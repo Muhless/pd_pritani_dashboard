@@ -1,15 +1,30 @@
 import { InputComponent } from "@/components/Input";
 import { AlternatifLoginButton } from "@/components/ui/Button/AlternatifLoginButton";
 import { ButtonComponent } from "@/components/ui/Button/Button";
+import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 
 const LoginPage = () => {
   return (
-    <div className="flex items-center justify-center h-screen text-black bg-gray-100">
-      <div className="flex flex-col justify-center p-20 space-y-10 bg-white border rounded-xl">
-        <div className="flex justify-center">
-          <h1 className="text-3xl font-heading ">Login</h1>
+    <div className="grid h-screen grid-cols-2 text-black bg-gray-100">
+      {/* left side */}
+      <div className="relative col-span-1">
+        <Image
+          src="/images/rice-field.jpg"
+          alt="banner-login"
+          fill
+          className="object-fill shadow-2xl"
+        />
+      </div>
+      {/* right side */}
+      <div className="flex flex-col justify-center items-center col-span-1 p-10 space-y-5 bg-white">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="font-mono text-4xl font-semibold">Login</h1>
+          <p className="text-gray-600 text-center font-sans">
+            Selamat datang di dashboard <br />
+            <span>Penggilingan Padi Pritani</span>
+          </p>
         </div>
         <form>
           <div className="space-y-3">
@@ -23,9 +38,11 @@ const LoginPage = () => {
               name="password"
               placeholder="Masukkan password anda"
             />
-            <h3 className="font-bold text-green-600">Lupa Password ?</h3>
+            <h3 className="inline-block text-gray-500 cursor-pointer sition dispfont-bold hover:text-green-600 hover:underline">
+              Lupa Password ?
+            </h3>
           </div>
-          <div className="mt-5">
+          <div className="mt-3">
             <ButtonComponent
               variant="success"
               className="flex items-center justify-center w-full gap-1"
@@ -34,11 +51,11 @@ const LoginPage = () => {
             </ButtonComponent>
           </div>
         </form>
-        <div className="space-y-3">
+        <div className="space-y-3 w-96">
           <div className="flex items-center">
-            <div className="flex-1 border-t text-gray-400"></div>
+            <div className="flex-1 text-gray-400 border-t"></div>
             <p className="px-3">atau</p>
-            <div className="flex-1 border-t text-gray-400"></div>
+            <div className="flex-1 text-gray-400 border-t"></div>
           </div>
           <div className="flex justify-evenly">
             <AlternatifLoginButton>
