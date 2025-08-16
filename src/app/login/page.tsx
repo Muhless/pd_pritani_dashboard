@@ -1,6 +1,6 @@
 import { InputComponent } from "@/components/Input";
-import { AlternatifLoginButton } from "@/components/ui/Button/AlternatifLoginButton";
-import { ButtonComponent } from "@/components/ui/Button/Button";
+import { AlternatifLoginButton } from "@/components/ui/button/AlternatifLoginButton";
+import { ButtonComponent } from "@/components/ui/button/Button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
