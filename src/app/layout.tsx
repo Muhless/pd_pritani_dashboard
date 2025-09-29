@@ -1,3 +1,4 @@
+import ReactQueryProvider from "@/lib/ReactWueryProvider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Roboto_Mono } from "next/font/google";
 import "./globals.css";
@@ -40,7 +41,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${robotoMono.variable} antialiased`}
       >
-        {children}
+        <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
     </html>
   );
