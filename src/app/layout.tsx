@@ -1,4 +1,4 @@
-import ReactQueryProvider from "@/lib/ReactWueryProvider";
+import ReactQueryProvider from "@/lib/ReactQueryProvider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Roboto_Mono } from "next/font/google";
 import "./globals.css";
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
-  weight: "100",
+  weight: ["400", "500", "600"],
 });
 
 const robotoMono = Roboto_Mono({

@@ -1,6 +1,6 @@
 "use client";
 
-import { InputComponent } from "@/components/Input";
+import { InputComponent } from "@/components/ui/input/Input";
 import { AlternatifLoginButton } from "@/components/ui/button/AlternatifLoginButton";
 import { ButtonComponent } from "@/components/ui/button/Button";
 import { useLogin } from "@/hooks/useLogin";

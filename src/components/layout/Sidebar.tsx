@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { CiCircleList, CiHome, CiLogout, CiUser } from "react-icons/ci";
 import { PiStorefrontLight } from "react-icons/pi";
