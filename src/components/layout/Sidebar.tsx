@@ -15,7 +15,7 @@ const SidebarComponent = () => {
           width={70}
           height={100}
         />
-        <p className="text-white font-sans text-xl">Ady Trans Jaya</p>
+        <p className="text-white font-sans text-xl">PG. Pritani</p>
       </div>
       <div className="space-y-2 mt-2">
         <MenuSidebarComponent label="Halaman Utama" navigation="/dashboard">

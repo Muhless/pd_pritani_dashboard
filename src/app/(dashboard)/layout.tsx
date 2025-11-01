@@ -13,7 +13,7 @@ export default function RootLayout({
         <ReactQueryProvider>
           <div className="flex min-h-screen">
             <SidebarComponent />
-            <main className="p-4 w-full">{children}</main>
+            <main className="p-4 w-full bg-white">{children}</main>
           </div>
         </ReactQueryProvider>
       </body>

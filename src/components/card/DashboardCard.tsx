@@ -13,7 +13,7 @@ const DashboardCard: React.FC<DashboardCardProps> = ({
   description,
 }) => {
   return (
-    <div className="bg-white h-36 p-4 rounded-xl flex flex-col justify-between">
+    <div className="bg-card h-32 p-4 rounded-xl flex flex-col justify-between">
       <div className="flex justify-between">
         <h1 className="text-xl font-bold">{title}</h1>
         <div className="p-2 bg-white border border-gray-500 rounded-full cursor-pointer">
