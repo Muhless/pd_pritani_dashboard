@@ -5,7 +5,7 @@ import SearchInput from "../ui/input/Search";
 
 const Topbar = () => {
   return (
-    <div className="bg-background p-3 items-center grid grid-cols-3">
+    <div className="bg-background p-3 items-center grid grid-cols-3 rounded-xl">
       {/* left */}
       <div>
         <SearchInput />

@@ -1,13 +1,16 @@
 "use client";
 
+import { Store } from "lucide-react";
 import Image from "next/image";
-import { CiCircleList, CiHome, CiLogout, CiUser } from "react-icons/ci";
-import { PiStorefrontLight } from "react-icons/pi";
+import { BiUser } from "react-icons/bi";
+import { CiCircleList, CiLogout } from "react-icons/ci";
+import { LuUsers } from "react-icons/lu";
+import { MdDashboard } from "react-icons/md";
 import MenuSidebarComponent from "../ui/menu/MenuSidebar";
 
 const SidebarComponent = () => {
   return (
-    <div className="w-64 bg-third h-screen shadow-2xs">
+    <div className="w-64 bg-primary h-screen shadow-2xs">
       <div className="flex flex-col items-center justify-center p-5">
         <Image
           src="/logo-pritani.png"
@@ -19,13 +22,16 @@ const SidebarComponent = () => {
       </div>
       <div className="space-y-2 mt-2">
         <MenuSidebarComponent label="Halaman Utama" navigation="/dashboard">
-          <CiHome />
+          <MdDashboard />
+        </MenuSidebarComponent>
+        <MenuSidebarComponent label="Karyawan" navigation="/employee">
+          <LuUsers />
         </MenuSidebarComponent>
         <MenuSidebarComponent label="Pelanggan" navigation="/customer">
-          <CiUser />
+          <BiUser />
         </MenuSidebarComponent>
         <MenuSidebarComponent label="Produk" navigation="/product">
-          <PiStorefrontLight />
+          <Store />
         </MenuSidebarComponent>
         <MenuSidebarComponent label="Transaksi" navigation="/transaction">
           <CiCircleList />

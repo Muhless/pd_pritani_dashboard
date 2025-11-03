@@ -9,6 +9,8 @@ export function middleware(request: NextRequest) {
   return NextResponse.next();
 }
 
+
+// for setting the route
 export const config = {
-  matcher: ["/", "/home/:path*", "/profile/:path*", "/employee/:path*"],
+  matcher: ["/", "/adad/:path*", "/dada/:path*", "/dadad/:path*"],
 };

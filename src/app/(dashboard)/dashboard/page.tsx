@@ -7,8 +7,13 @@ const DashboardPages = () => {
   return (
     <div className="mx-auto w-full h-full space-y-3">
       <Topbar />
-      <div className="p-3 bg-background space-y-3">
-        <h1 className="text-4xl font-bold">Dashboard</h1>
+      <div className="p-3 bg-background space-y-3 rounded-xl">
+        <div>
+          <h1 className="text-4xl font-bold leading-tight">Dashboard</h1>
+          <p className="text-sm text-primary leading-tight">
+            Selamat datang di dashboard Penggilingan Padi Pritani
+          </p>
+        </div>
         {/* card */}
         <HeroDashboard />
         <MiddleDashboard />
